@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyFangs Consumables</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <header>
+                <h1 class="shop-title">OnlyFangs Consumables</h1>
+                <!-- Removed the tagline "Premium Potions & Elixirs" -->
+                <div class="fang-decorations">
+                    <div class="fang-icon"></div>
+                </div>
+            </header>
+
+            <!-- Shop controls with search only -->
+            <div class="shop-controls">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search items..." class="search-input">
+                    <button id="searchClearBtn" class="search-clear-btn">×</button>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="items-container">
+                    <div class="item-list" id="itemList">
+                        <!-- Items will be loaded here -->
+                        <div class="loader">
+                            <div class="spinner"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopping-basket" id="basket">
+                    <div class="basket-header">
+                        <h2 class="basket-title">Shopping Basket</h2>
+                        <div class="basket-count" id="basketCount">0</div>
+                    </div>
+                    
+                    <div class="basket-items" id="basketItems">
+                        <div class="empty-basket-message">Your basket is empty</div>
+                    </div>
+                    
+                    <div class="basket-summary">
+                        <div class="summary-row">
+                            <span>Items:</span>
+                            <span id="basketItemsCount">0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Total:</span>
+                            <span id="basketTotal">
+                                <span id="basketGold">0</span>
+                                <span class="gold-icon"></span>
+                                <span id="basketSilver">0</span>
+                                <span class="silver-icon"></span>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Updated Checkout Modal -->
+    <div class="modal-overlay" id="checkoutModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <h2>Your Order</h2>
+            
+            <div class="in-game-mail" id="mailText"></div>
+            <button class="copy-mail-btn" id="copyMailBtn">COPY TO CLIPBOARD</button>
+            <p class="copy-success" id="copySuccess">Copied successfully!</p>
+            
+            <div class="checkout-instructions">
+                <p><strong>Instructions:</strong></p>
+                <p>Copy the text above and send it to <strong>Vulpesbank</strong> or <strong>Toocabank</strong> via in-game mail. Please attach the total gold amount with your mail.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include the inventory data and main script -->
+    <script src="inventory.js"></script>
+    
+    <!-- Simple Wowhead tooltip configuration -->
+    <script>
+        const whTooltips = {
+            colorLinks: true,
+            iconizeLinks: true,
+            renameLinks: false,
+            iconSize: 'medium',
+            domain: 'classic'
+        };
+    </script>
+    <script src="https://wow.zamimg.com/widgets/power.js"></script>
+    
+    <!-- Main shop script -->
+    <script src="main.js"></script>
+</body>
+</html>
