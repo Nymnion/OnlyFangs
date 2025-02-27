@@ -284,7 +284,7 @@ const shopInventory = {
           "unique": false
         },
         {
-          "id": "22480",
+          "id": "18045",
           "name": "Tender Wolf Steak",
           "price": {
             "gold": 0,
