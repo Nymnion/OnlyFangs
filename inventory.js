@@ -1,4 +1,4 @@
-console.log("Inventory loaded - version: 20250227-2");
+console.log("Inventory loaded - version: 20250227-1");
 
 const shopInventory = {
   "shopName": "OnlyFangs Consumables",
@@ -8,17 +8,6 @@ const shopInventory = {
       "id": "consumables",
       "name": "Consumables",
       "items": [
-        {
-          "id": "13510",
-          "name": "Flask of the Titans",
-          "price": {
-            "gold": 55,
-            "silver": 0,
-            "total": 5500
-          },
-          "quality": "uncommon",
-          "unique": false
-        },
         {
           "id": "13511",
           "name": "Flask of Distilled Wisdom",
@@ -207,8 +196,8 @@ const shopInventory = {
           "unique": false
         },
         {
-          "id": "9030",
-          "name": "Restorative Potion",
+          "id": "20008",
+          "name": "Living Action Potion",
           "price": {
             "gold": 0,
             "silver": 90,
@@ -229,8 +218,8 @@ const shopInventory = {
           "unique": false
         },
         {
-          "id": "3825",
-          "name": "Elixir of Fortitude",
+          "id": "1180",
+          "name": "Scroll of Stamina IV",
           "price": {
             "gold": 0,
             "silver": 50,
@@ -295,7 +284,7 @@ const shopInventory = {
           "unique": false
         },
         {
-          "id": "12213",
+          "id": "22480",
           "name": "Tender Wolf Steak",
           "price": {
             "gold": 0,
